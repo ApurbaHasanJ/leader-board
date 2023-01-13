@@ -1,5 +1,10 @@
 /* google fonts */
+
+/* poppins */
 @import url('https://fonts.googleapis.com/css2?family=Norican&family=Open+Sans&family=Poppins:wght@500&display=swap');
+
+/* Roboto fonts */
+@import url('https://fonts.googleapis.com/css2?family=Norican&family=Open+Sans&family=Poppins:wght@500&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -104,6 +109,70 @@ hr{
 /* ------------------
     Courses Styles
 --------------------- */
+.courses{
+    display: grid;
+    grid-column-gap: 35px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course{
+    width: 100%;
+    color: whitesmoke;
+    padding: 14px;
+    /* border: 1px solid; */
+    border-radius: 12px;
+    /* filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05)); */
+    box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.05) ;
+}
+
+
 .course .course-banner img{
-    width: 224px;
+    width: 100%;
+}
+
+.course-title{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 500;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-author a{
+    color: #ED6B4F;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'roboto', sans-serif;
+}
+
+
+.fa-star.filled{
+    font-size: 12px;
+    color: #FFC014;
+}
+
+.fa-star-half.empty{
+    font-size: 12px;
+    /* color: #AEAEAE; */
+    color: #FFC014;
+}
+
+.course-rating{
+    font-weight: 400;
+    font-size: 13px;
+    color:#A2A2A2;
+    margin-left: 10px;
+}
+
+.course-duration{
+    font-size: 13px;
+    font-weight: 600;
+    color: #FF4A60;
+    background: #FFE4E8;
+    padding: 4px;
+    border-radius: 14.6913px;
+    border: 1px solid #FF4A60;
+    
 }
