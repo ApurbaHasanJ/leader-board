@@ -176,3 +176,72 @@ hr{
     border: 1px solid #FF4A60;
     
 }
+
+/* ----------------
+    Media Queries
+------------------- */
+
+/* ----------------
+    Mobile Devices
+-------------------*/
+@media only screen and (max-width:688px) {
+    .container{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .players, 
+    .blogs,
+    .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-info{
+        margin-left: 0;
+    }
+}
+
+/* ------------------
+    Tablet Devices
+--------------------- */
+@media only screen and (min-width:689px) and (max-width:1024px) {
+    .container{
+        width: 90%;
+    }
+
+    .players, 
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-info{
+        margin-left: 0;
+    }
+    
+}
+ /* ----------------------
+    Tablet Devices Pro
+------------------------- */
+/* @media only screen and (min-width:801px) and (max-width:1024px) {
+    .container{
+        width: 90%;
+    }
+
+    .players, 
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .blog-info{
+        margin-left: 0;
+    }
+    
+} */
+
