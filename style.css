@@ -1,0 +1,109 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Norican&family=Open+Sans&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: #FFFFFF;
+    margin-top: 36px;
+    width: 70%;
+    padding: 33px;
+    border-radius: 8px;
+
+
+}
+
+
+/* top players style */
+.section-title{
+    font-size: 24px;
+    color: #562EFF;
+    margin-bottom:40px;
+}
+.top-players{
+    margin-bottom: 33px;
+}
+
+.players{
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player{
+    display: flex;
+    gap: 16px;
+    /* margin-top: 40px; */
+    align-items: center;
+}
+
+.player img{
+    width: 56px;
+}
+
+.player-name{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 33px;
+}
+
+/* Top Blogs styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 46px;
+    grid-row-gap: 26px ;
+}
+
+.blog{
+    display: flex;
+}
+
+.blog .thumbnail img{
+    width: 177px;
+}
+
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+
+.blog-author{
+    font-size: 16px;
+    margin-top: 3px;
+    color: #9F9F9F;
+}
+
+.blog-author a{
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* ------------------
+    Courses Styles
+--------------------- */
+.course .course-banner img{
+    width: 224px;
+}
